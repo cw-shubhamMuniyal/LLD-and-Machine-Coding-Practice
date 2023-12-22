@@ -1,0 +1,46 @@
+
+using Model;
+using Service;
+namespace Commands
+{
+    /**
+     * Executor to handle command of fetching all slot numbers in which cars of a particular color are
+     * parked.
+     */
+    public class ColorToSlotNumberCommandExecutor : CommandExecutor
+    {
+        public static String COMMAND_NAME = "slot_numbers_for_cars_with_colour";
+
+        public ColorToSlotNumberCommandExecutor(
+             ParkingLotService parkingLotService, OutputPrinter outputPrinter) : base(parkingLotService, outputPrinter)
+        {
+
+        }
+
+        /**
+         * {@inheritDoc}
+         */
+        public override bool Validate(Command command)
+        {
+            return command.Params.Count == 1;
+        }
+
+        /**
+         * {@inheritDoc}
+         */
+        public override void Execute(Command command)
+        {
+            List<Slot> slotsForColor = parkingLotService.getSlotsForColor(command.Params[0]);
+            if (slotsForColor.Count == 0)
+            {
+                outputPrinter.NotFound();
+            }
+            else
+            {
+                string result =
+                        string.Join(", ", slotsForColor.Select(slot => slot.Id));
+                outputPrinter.PrintWithNewLine(result);
+            }
+        }
+    }
+}

@@ -1,0 +1,15 @@
+C:\Work\LLd\LLD-and-Machine-Coding-Practice\TicTacToe\obj\Debug\net8.0\TicTacToe.GeneratedMSBuildEditorConfig.editorconfig
+C:\Work\LLd\LLD-and-Machine-Coding-Practice\TicTacToe\obj\Debug\net8.0\TicTacToe.AssemblyInfoInputs.cache
+C:\Work\LLd\LLD-and-Machine-Coding-Practice\TicTacToe\obj\Debug\net8.0\TicTacToe.AssemblyInfo.cs
+C:\Work\LLd\LLD-and-Machine-Coding-Practice\TicTacToe\obj\Debug\net8.0\TicTacToe.csproj.CoreCompileInputs.cache
+C:\Work\LLd\LLD-and-Machine-Coding-Practice\TicTacToe\obj\Debug\net8.0\TicTacToe.sourcelink.json
+C:\Work\LLd\LLD-and-Machine-Coding-Practice\TicTacToe\bin\Debug\net8.0\TicTacToe.exe
+C:\Work\LLd\LLD-and-Machine-Coding-Practice\TicTacToe\bin\Debug\net8.0\TicTacToe.deps.json
+C:\Work\LLd\LLD-and-Machine-Coding-Practice\TicTacToe\bin\Debug\net8.0\TicTacToe.runtimeconfig.json
+C:\Work\LLd\LLD-and-Machine-Coding-Practice\TicTacToe\bin\Debug\net8.0\TicTacToe.dll
+C:\Work\LLd\LLD-and-Machine-Coding-Practice\TicTacToe\bin\Debug\net8.0\TicTacToe.pdb
+C:\Work\LLd\LLD-and-Machine-Coding-Practice\TicTacToe\obj\Debug\net8.0\TicTacToe.dll
+C:\Work\LLd\LLD-and-Machine-Coding-Practice\TicTacToe\obj\Debug\net8.0\refint\TicTacToe.dll
+C:\Work\LLd\LLD-and-Machine-Coding-Practice\TicTacToe\obj\Debug\net8.0\TicTacToe.pdb
+C:\Work\LLd\LLD-and-Machine-Coding-Practice\TicTacToe\obj\Debug\net8.0\TicTacToe.genruntimeconfig.cache
+C:\Work\LLd\LLD-and-Machine-Coding-Practice\TicTacToe\obj\Debug\net8.0\ref\TicTacToe.dll

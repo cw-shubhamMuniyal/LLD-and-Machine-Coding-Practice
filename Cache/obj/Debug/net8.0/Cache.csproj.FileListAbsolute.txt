@@ -1,0 +1,15 @@
+C:\Work\LLd\LLD-and-Machine-Coding-Practice\Cache\obj\Debug\net8.0\Cache.GeneratedMSBuildEditorConfig.editorconfig
+C:\Work\LLd\LLD-and-Machine-Coding-Practice\Cache\obj\Debug\net8.0\Cache.AssemblyInfoInputs.cache
+C:\Work\LLd\LLD-and-Machine-Coding-Practice\Cache\obj\Debug\net8.0\Cache.AssemblyInfo.cs
+C:\Work\LLd\LLD-and-Machine-Coding-Practice\Cache\obj\Debug\net8.0\Cache.csproj.CoreCompileInputs.cache
+C:\Work\LLd\LLD-and-Machine-Coding-Practice\Cache\obj\Debug\net8.0\Cache.sourcelink.json
+C:\Work\LLd\LLD-and-Machine-Coding-Practice\Cache\bin\Debug\net8.0\Cache.exe
+C:\Work\LLd\LLD-and-Machine-Coding-Practice\Cache\bin\Debug\net8.0\Cache.deps.json
+C:\Work\LLd\LLD-and-Machine-Coding-Practice\Cache\bin\Debug\net8.0\Cache.runtimeconfig.json
+C:\Work\LLd\LLD-and-Machine-Coding-Practice\Cache\bin\Debug\net8.0\Cache.dll
+C:\Work\LLd\LLD-and-Machine-Coding-Practice\Cache\bin\Debug\net8.0\Cache.pdb
+C:\Work\LLd\LLD-and-Machine-Coding-Practice\Cache\obj\Debug\net8.0\Cache.dll
+C:\Work\LLd\LLD-and-Machine-Coding-Practice\Cache\obj\Debug\net8.0\refint\Cache.dll
+C:\Work\LLd\LLD-and-Machine-Coding-Practice\Cache\obj\Debug\net8.0\Cache.pdb
+C:\Work\LLd\LLD-and-Machine-Coding-Practice\Cache\obj\Debug\net8.0\Cache.genruntimeconfig.cache
+C:\Work\LLd\LLD-and-Machine-Coding-Practice\Cache\obj\Debug\net8.0\ref\Cache.dll

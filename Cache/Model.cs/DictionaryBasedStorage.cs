@@ -11,7 +11,6 @@ namespace Model
         {
             Capacity = capacity;
         }
-
         public void AddKey(string key, T value)
         {
             if (IsStorageFull())

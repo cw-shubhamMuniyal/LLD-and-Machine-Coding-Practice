@@ -1,0 +1,15 @@
+C:\Work\LLd\LLD-and-Machine-Coding-Practice\VendingMachine\bin\Debug\net8.0\VendingMachine.exe
+C:\Work\LLd\LLD-and-Machine-Coding-Practice\VendingMachine\bin\Debug\net8.0\VendingMachine.deps.json
+C:\Work\LLd\LLD-and-Machine-Coding-Practice\VendingMachine\bin\Debug\net8.0\VendingMachine.runtimeconfig.json
+C:\Work\LLd\LLD-and-Machine-Coding-Practice\VendingMachine\bin\Debug\net8.0\VendingMachine.dll
+C:\Work\LLd\LLD-and-Machine-Coding-Practice\VendingMachine\bin\Debug\net8.0\VendingMachine.pdb
+C:\Work\LLd\LLD-and-Machine-Coding-Practice\VendingMachine\obj\Debug\net8.0\VendingMachine.GeneratedMSBuildEditorConfig.editorconfig
+C:\Work\LLd\LLD-and-Machine-Coding-Practice\VendingMachine\obj\Debug\net8.0\VendingMachine.AssemblyInfoInputs.cache
+C:\Work\LLd\LLD-and-Machine-Coding-Practice\VendingMachine\obj\Debug\net8.0\VendingMachine.AssemblyInfo.cs
+C:\Work\LLd\LLD-and-Machine-Coding-Practice\VendingMachine\obj\Debug\net8.0\VendingMachine.csproj.CoreCompileInputs.cache
+C:\Work\LLd\LLD-and-Machine-Coding-Practice\VendingMachine\obj\Debug\net8.0\VendingMachine.sourcelink.json
+C:\Work\LLd\LLD-and-Machine-Coding-Practice\VendingMachine\obj\Debug\net8.0\VendingMachine.dll
+C:\Work\LLd\LLD-and-Machine-Coding-Practice\VendingMachine\obj\Debug\net8.0\refint\VendingMachine.dll
+C:\Work\LLd\LLD-and-Machine-Coding-Practice\VendingMachine\obj\Debug\net8.0\VendingMachine.pdb
+C:\Work\LLd\LLD-and-Machine-Coding-Practice\VendingMachine\obj\Debug\net8.0\VendingMachine.genruntimeconfig.cache
+C:\Work\LLd\LLD-and-Machine-Coding-Practice\VendingMachine\obj\Debug\net8.0\ref\VendingMachine.dll

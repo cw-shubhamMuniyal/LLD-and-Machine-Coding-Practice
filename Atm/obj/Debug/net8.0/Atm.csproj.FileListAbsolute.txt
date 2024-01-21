@@ -1,0 +1,15 @@
+C:\Work\LLd\LLD-and-Machine-Coding-Practice\Atm\bin\Debug\net8.0\Atm.exe
+C:\Work\LLd\LLD-and-Machine-Coding-Practice\Atm\bin\Debug\net8.0\Atm.deps.json
+C:\Work\LLd\LLD-and-Machine-Coding-Practice\Atm\bin\Debug\net8.0\Atm.runtimeconfig.json
+C:\Work\LLd\LLD-and-Machine-Coding-Practice\Atm\bin\Debug\net8.0\Atm.dll
+C:\Work\LLd\LLD-and-Machine-Coding-Practice\Atm\bin\Debug\net8.0\Atm.pdb
+C:\Work\LLd\LLD-and-Machine-Coding-Practice\Atm\obj\Debug\net8.0\Atm.GeneratedMSBuildEditorConfig.editorconfig
+C:\Work\LLd\LLD-and-Machine-Coding-Practice\Atm\obj\Debug\net8.0\Atm.AssemblyInfoInputs.cache
+C:\Work\LLd\LLD-and-Machine-Coding-Practice\Atm\obj\Debug\net8.0\Atm.AssemblyInfo.cs
+C:\Work\LLd\LLD-and-Machine-Coding-Practice\Atm\obj\Debug\net8.0\Atm.csproj.CoreCompileInputs.cache
+C:\Work\LLd\LLD-and-Machine-Coding-Practice\Atm\obj\Debug\net8.0\Atm.sourcelink.json
+C:\Work\LLd\LLD-and-Machine-Coding-Practice\Atm\obj\Debug\net8.0\Atm.dll
+C:\Work\LLd\LLD-and-Machine-Coding-Practice\Atm\obj\Debug\net8.0\refint\Atm.dll
+C:\Work\LLd\LLD-and-Machine-Coding-Practice\Atm\obj\Debug\net8.0\Atm.pdb
+C:\Work\LLd\LLD-and-Machine-Coding-Practice\Atm\obj\Debug\net8.0\Atm.genruntimeconfig.cache
+C:\Work\LLd\LLD-and-Machine-Coding-Practice\Atm\obj\Debug\net8.0\ref\Atm.dll

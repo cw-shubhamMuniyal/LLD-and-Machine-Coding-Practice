@@ -1,0 +1,15 @@
+C:\Work\LLd\LLD-and-Machine-Coding-Practice\MovieTicketBooking\bin\Debug\net8.0\MovieTicketBooking.exe
+C:\Work\LLd\LLD-and-Machine-Coding-Practice\MovieTicketBooking\bin\Debug\net8.0\MovieTicketBooking.deps.json
+C:\Work\LLd\LLD-and-Machine-Coding-Practice\MovieTicketBooking\bin\Debug\net8.0\MovieTicketBooking.runtimeconfig.json
+C:\Work\LLd\LLD-and-Machine-Coding-Practice\MovieTicketBooking\bin\Debug\net8.0\MovieTicketBooking.dll
+C:\Work\LLd\LLD-and-Machine-Coding-Practice\MovieTicketBooking\bin\Debug\net8.0\MovieTicketBooking.pdb
+C:\Work\LLd\LLD-and-Machine-Coding-Practice\MovieTicketBooking\obj\Debug\net8.0\MovieTicketBooking.GeneratedMSBuildEditorConfig.editorconfig
+C:\Work\LLd\LLD-and-Machine-Coding-Practice\MovieTicketBooking\obj\Debug\net8.0\MovieTicketBooking.AssemblyInfoInputs.cache
+C:\Work\LLd\LLD-and-Machine-Coding-Practice\MovieTicketBooking\obj\Debug\net8.0\MovieTicketBooking.AssemblyInfo.cs
+C:\Work\LLd\LLD-and-Machine-Coding-Practice\MovieTicketBooking\obj\Debug\net8.0\MovieTicketBooking.csproj.CoreCompileInputs.cache
+C:\Work\LLd\LLD-and-Machine-Coding-Practice\MovieTicketBooking\obj\Debug\net8.0\MovieTicketBooking.sourcelink.json
+C:\Work\LLd\LLD-and-Machine-Coding-Practice\MovieTicketBooking\obj\Debug\net8.0\MovieTicketBooking.dll
+C:\Work\LLd\LLD-and-Machine-Coding-Practice\MovieTicketBooking\obj\Debug\net8.0\refint\MovieTicketBooking.dll
+C:\Work\LLd\LLD-and-Machine-Coding-Practice\MovieTicketBooking\obj\Debug\net8.0\MovieTicketBooking.pdb
+C:\Work\LLd\LLD-and-Machine-Coding-Practice\MovieTicketBooking\obj\Debug\net8.0\MovieTicketBooking.genruntimeconfig.cache
+C:\Work\LLd\LLD-and-Machine-Coding-Practice\MovieTicketBooking\obj\Debug\net8.0\ref\MovieTicketBooking.dll

@@ -45,7 +45,7 @@ class Program
         string movieId3 = movieController.Add("Avengers");
 
         ShowService showService = new ShowService();
-        ISeatLockProvider seatLockProvider = new InMemorySeatLockProvider(20);
+        ISeatLockProvider seatLockProvider = new InMemorySeatLockProvider(10);
         BookingService bookingService = new BookingService(seatLockProvider);
         SeatAvailabilityService seatAvailabilityService = new SeatAvailabilityService(showService,
         seatLockProvider, bookingService);
@@ -60,12 +60,12 @@ class Program
 
         PaymentService paymentService = new PaymentService(bookingService, seatLockProvider, 5);
         PaymentController paymentController = new PaymentController(bookingService, paymentService);
-        paymentController.ProcessPaymentFailed("chinnay swamay", bookingId1);
 
 
         string bookingId2 = bookingController.CreateBooking(showId1, "Muttu swamay", seatsInScreen1.GetRange(2, 5));
         bookingController.ConfrimBooking(bookingId2, "Muttu swamay");
         paymentController.ProcessPaymentSuccess("Muttu swamay", bookingId2);
+        paymentController.ProcessPaymentSuccess("chinnay swamay", bookingId1);
 
 
 

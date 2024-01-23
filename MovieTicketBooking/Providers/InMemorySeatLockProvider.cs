@@ -81,9 +81,18 @@ namespace MovieTicketBooking.Providers
 
         private bool isSeatLocked(Show show, Seat seat)
         {
-            return _locks.ContainsKey(show) &&
+            bool isSeatLocked = _locks.ContainsKey(show) &&
             _locks.GetValueOrDefault(show).ContainsKey(seat) &&
             !_locks.GetValueOrDefault(show).GetValueOrDefault(seat).isLockExpired();
+
+            // Added this snippet to remove lock if expired as not getting right place to add this code based on time
+            if(_locks.ContainsKey(show) &&
+            _locks.GetValueOrDefault(show).ContainsKey(seat) &&
+            _locks.GetValueOrDefault(show).GetValueOrDefault(seat).isLockExpired())
+            {
+                unlockSeat(show, seat);
+            }
+            return isSeatLocked;
         }
     }
 }

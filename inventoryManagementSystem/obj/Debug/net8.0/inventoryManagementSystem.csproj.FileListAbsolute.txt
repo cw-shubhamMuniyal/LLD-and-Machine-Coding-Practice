@@ -1,0 +1,15 @@
+C:\Work\LLd\LLD-and-Machine-Coding-Practice\inventoryManagementSystem\bin\Debug\net8.0\inventoryManagementSystem.exe
+C:\Work\LLd\LLD-and-Machine-Coding-Practice\inventoryManagementSystem\bin\Debug\net8.0\inventoryManagementSystem.deps.json
+C:\Work\LLd\LLD-and-Machine-Coding-Practice\inventoryManagementSystem\bin\Debug\net8.0\inventoryManagementSystem.runtimeconfig.json
+C:\Work\LLd\LLD-and-Machine-Coding-Practice\inventoryManagementSystem\bin\Debug\net8.0\inventoryManagementSystem.dll
+C:\Work\LLd\LLD-and-Machine-Coding-Practice\inventoryManagementSystem\bin\Debug\net8.0\inventoryManagementSystem.pdb
+C:\Work\LLd\LLD-and-Machine-Coding-Practice\inventoryManagementSystem\obj\Debug\net8.0\inventoryManagementSystem.GeneratedMSBuildEditorConfig.editorconfig
+C:\Work\LLd\LLD-and-Machine-Coding-Practice\inventoryManagementSystem\obj\Debug\net8.0\inventoryManagementSystem.AssemblyInfoInputs.cache
+C:\Work\LLd\LLD-and-Machine-Coding-Practice\inventoryManagementSystem\obj\Debug\net8.0\inventoryManagementSystem.AssemblyInfo.cs
+C:\Work\LLd\LLD-and-Machine-Coding-Practice\inventoryManagementSystem\obj\Debug\net8.0\inventoryManagementSystem.csproj.CoreCompileInputs.cache
+C:\Work\LLd\LLD-and-Machine-Coding-Practice\inventoryManagementSystem\obj\Debug\net8.0\inventoryManagementSystem.sourcelink.json
+C:\Work\LLd\LLD-and-Machine-Coding-Practice\inventoryManagementSystem\obj\Debug\net8.0\inventoryManagementSystem.dll
+C:\Work\LLd\LLD-and-Machine-Coding-Practice\inventoryManagementSystem\obj\Debug\net8.0\refint\inventoryManagementSystem.dll
+C:\Work\LLd\LLD-and-Machine-Coding-Practice\inventoryManagementSystem\obj\Debug\net8.0\inventoryManagementSystem.pdb
+C:\Work\LLd\LLD-and-Machine-Coding-Practice\inventoryManagementSystem\obj\Debug\net8.0\inventoryManagementSystem.genruntimeconfig.cache
+C:\Work\LLd\LLD-and-Machine-Coding-Practice\inventoryManagementSystem\obj\Debug\net8.0\ref\inventoryManagementSystem.dll

@@ -1,0 +1,15 @@
+C:\Work\LLd\LLD-and-Machine-Coding-Practice\CricBuzz\bin\Debug\net8.0\CricBuzz.exe
+C:\Work\LLd\LLD-and-Machine-Coding-Practice\CricBuzz\bin\Debug\net8.0\CricBuzz.deps.json
+C:\Work\LLd\LLD-and-Machine-Coding-Practice\CricBuzz\bin\Debug\net8.0\CricBuzz.runtimeconfig.json
+C:\Work\LLd\LLD-and-Machine-Coding-Practice\CricBuzz\bin\Debug\net8.0\CricBuzz.dll
+C:\Work\LLd\LLD-and-Machine-Coding-Practice\CricBuzz\bin\Debug\net8.0\CricBuzz.pdb
+C:\Work\LLd\LLD-and-Machine-Coding-Practice\CricBuzz\obj\Debug\net8.0\CricBuzz.GeneratedMSBuildEditorConfig.editorconfig
+C:\Work\LLd\LLD-and-Machine-Coding-Practice\CricBuzz\obj\Debug\net8.0\CricBuzz.AssemblyInfoInputs.cache
+C:\Work\LLd\LLD-and-Machine-Coding-Practice\CricBuzz\obj\Debug\net8.0\CricBuzz.AssemblyInfo.cs
+C:\Work\LLd\LLD-and-Machine-Coding-Practice\CricBuzz\obj\Debug\net8.0\CricBuzz.csproj.CoreCompileInputs.cache
+C:\Work\LLd\LLD-and-Machine-Coding-Practice\CricBuzz\obj\Debug\net8.0\CricBuzz.sourcelink.json
+C:\Work\LLd\LLD-and-Machine-Coding-Practice\CricBuzz\obj\Debug\net8.0\CricBuzz.dll
+C:\Work\LLd\LLD-and-Machine-Coding-Practice\CricBuzz\obj\Debug\net8.0\refint\CricBuzz.dll
+C:\Work\LLd\LLD-and-Machine-Coding-Practice\CricBuzz\obj\Debug\net8.0\CricBuzz.pdb
+C:\Work\LLd\LLD-and-Machine-Coding-Practice\CricBuzz\obj\Debug\net8.0\CricBuzz.genruntimeconfig.cache
+C:\Work\LLd\LLD-and-Machine-Coding-Practice\CricBuzz\obj\Debug\net8.0\ref\CricBuzz.dll

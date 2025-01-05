@@ -1,0 +1,10 @@
+DEBUG [25/08/2024 03-37-10]    Empty txnIds Nothing to fetch 95        com.java.thread1       987      google
+DEBUG [25/08/2024 03-37-10]    No user found for phone number 95        com.java.thread2       498      meta
+DEBUG [25/08/2024 03-37-11]    Empty txnIds Nothing to fetch 96        com.java.thread1       987      google
+DEBUG [25/08/2024 03-37-11]    No user found for phone number 96        com.java.thread2       498      meta
+DEBUG [25/08/2024 03-37-11]    Empty txnIds Nothing to fetch 97        com.java.thread1       987      google
+DEBUG [25/08/2024 03-37-11]    No user found for phone number 97        com.java.thread2       498      meta
+DEBUG [25/08/2024 03-37-11]    Empty txnIds Nothing to fetch 98        com.java.thread1       987      google
+DEBUG [25/08/2024 03-37-11]    No user found for phone number 98        com.java.thread2       498      meta
+DEBUG [25/08/2024 03-37-11]    Empty txnIds Nothing to fetch 99        com.java.thread1       987      google
+DEBUG [25/08/2024 03-37-11]    No user found for phone number 99        com.java.thread2       498      meta

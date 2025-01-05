@@ -1,6 +1,7 @@
 import Observables.IphoneStockObservable;
 import Observables.StockObservavle;
 import Observer.EmailNotificationAlertObserver;
+import Observer.NotificationAlertObserver;
 import Observer.Observer;
 
 public class Store {
@@ -13,7 +14,7 @@ public class Store {
         // Observers to be notified by email or phone number when new stocks added
         Observer observer1 = new EmailNotificationAlertObserver<Integer>(stockObservavle, "abc@gmail.com");
         Observer observer2 = new EmailNotificationAlertObserver<Integer>(stockObservavle, "xyz@gmail.com");
-        Observer observer3 = new EmailNotificationAlertObserver<Integer>(stockObservavle, "9876543210");
+        Observer observer3 = new NotificationAlertObserver<Integer>(stockObservavle, "9876543210");
 
         stockObservavle.add(observer1);
         stockObservavle.add(observer2);

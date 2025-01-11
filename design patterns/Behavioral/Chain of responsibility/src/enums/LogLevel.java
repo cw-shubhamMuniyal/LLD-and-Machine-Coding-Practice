@@ -6,12 +6,12 @@ public enum LogLevel {
     DEBUG(3);
 
     LogLevel(int level) {
-        level = this.level;
+        this.level = level;
     }
 
     public int getLevel() {
         return level;
     }
 
-    int level;
+    final int level;
 }

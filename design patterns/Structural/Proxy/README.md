@@ -1,6 +1,3 @@
-## Requirements
-
-
 ## Definition of Proxy DP
 
 A structural design pattern where a "proxy" object acts as a placeholder or substitute for another object, 

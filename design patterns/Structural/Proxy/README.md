@@ -7,15 +7,15 @@ controlling access to the original object by performing additional actions
 ## some types of Proxy
 
 -  Virtual Proxy: 
-  - Used when creating an object is resource-intensive or time-consuming.
-  - The proxy delays the creation or initialization of the actual object until it is needed.
+   - Used when creating an object is resource-intensive or time-consuming.
+   - The proxy delays the creation or initialization of the actual object until it is needed.
 
 -  Remote Proxy:
-  - Represents an object located in a different address space (e.g., another machine or a network).
-  - Handles the communication between the client and the remote object.
+   - Represents an object located in a different address space (e.g., another machine or a network).
+   - Handles the communication between the client and the remote object.
 
 -  Protection Proxy:
-  - Controls access to an object based on permissions or access levels.
+   - Controls access to an object based on permissions or access levels.
 
 
 ## Things to note
@@ -26,6 +26,6 @@ controlling access to the original object by performing additional actions
 ## Applications
 
 -  Caching
-- pre processing of requests
-- post processing of response
+- pre processing of requests.
+- post processing of response.
 - Access restrictions of some features to some users.

@@ -4,6 +4,8 @@ Create an automated Pay to access Gate System.
 
 ## State Diagram
 
+![State Design Example](images/State Design Example.png)
+
 ## Definition of State pattern
 
 A behavioral software design pattern that allows an object to alter its behavior when its internal state changes.

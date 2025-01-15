@@ -4,7 +4,8 @@ Create an automated Pay to access Gate System.
 
 ## State Diagram
 
-![State Design Example](images/pay to access gate system state diagram.png)
+  ![State diagram](https://github.com/cw-shubhamMuniyal/LLD-and-Machine-Coding-Practice/blob/main/design%20patterns/Behavioral/State%20Design%20Example/images/pay%20to%20access%20gate%20system%20state%20diagram.png)
+
 
 ## Definition of State pattern
 

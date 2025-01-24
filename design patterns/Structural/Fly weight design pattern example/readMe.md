@@ -1,9 +1,9 @@
 ## Requirements:
 
-Create a game containing multiple and different types of robots.  </br>
-Each robot type should have a unique appearance (image or sprite).  </br>
-Each robot instance should have unique attributes, like Position (x, y coordinates) on the game map.  </br>
-Make sure **memory** is efficiently utilized.  </br>
+- Create a game containing multiple and different types of robots.  </br>
+- Each robot type should have a unique appearance (image or sprite).  </br>
+- Each robot instance should have unique attributes, like Position (x, y coordinates) on the game map.  </br>
+- Make sure **memory** is efficiently utilized.  </br>
 
 ## Definition of Fly Weight pattern:
 

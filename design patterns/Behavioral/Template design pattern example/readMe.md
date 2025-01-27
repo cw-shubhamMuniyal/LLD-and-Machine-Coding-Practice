@@ -1,9 +1,9 @@
-## Definition of Command design pattern:
+## Definition of Template design pattern:
 
 It's a behavioral design pattern that defines the skeleton of an algorithm in a base class, 
 allowing subclasses to override specific steps within that algorithm without changing its overall structure.
 
-## Benefits of Command pattern:
+## Benefits of Template pattern:
 
 - **Code Reusability:** Common steps are implemented in the base class, avoiding duplication. </br>
 

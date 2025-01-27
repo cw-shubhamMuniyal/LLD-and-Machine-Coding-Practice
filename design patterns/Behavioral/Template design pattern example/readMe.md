@@ -11,71 +11,69 @@ allowing subclasses to override specific steps within that algorithm without cha
 
 - **Maintainability:** Changes to the common behavior are localized in the base class.
 
-## Example from head first design pattern book:
+## Example from head first design pattern book (Making Beverages (Tea and Coffee) ):
 
+```java
 // Abstract Class
 abstract class Beverage {
     // Template method (defines the algorithm)
     public final void prepareRecipe() {
-    boilWater();
-    brew();
-    pourInCup();
-    addCondiments();
-}
+        boilWater();
+        brew();
+        pourInCup();
+        addCondiments();
+    }
 
     // Common step
     private void boilWater() {
         System.out.println("Boiling water");
     }
 
-// Common step
-private void pourInCup() {
-    System.out.println("Pouring into cup");
-}
+    // Common step
+    private void pourInCup() {
+        System.out.println("Pouring into cup");
+    }
 
-// Abstract steps to be customized by subclasses
-protected abstract void brew();
-protected abstract void addCondiments();
+    // Abstract steps to be customized by subclasses
+    protected abstract void brew();
+    protected abstract void addCondiments();
 }
 
 // Concrete Subclass: Tea
 class Tea extends Beverage {
-@Override
-protected void brew() {
-System.out.println("Steeping the tea");
-}
+    @Override
+    protected void brew() {
+        System.out.println("Steeping the tea");
+    }
 
-@Override
-protected void addCondiments() {
-    System.out.println("Adding lemon");
-}
+    @Override
+    protected void addCondiments() {
+        System.out.println("Adding lemon");
+    }
 }
 
 // Concrete Subclass: Coffee
 class Coffee extends Beverage {
-@Override
-protected void brew() {
-System.out.println("Dripping coffee through filter");
-}
+    @Override
+    protected void brew() {
+        System.out.println("Dripping coffee through filter");
+    }
 
-@Override
-protected void addCondiments() {
-    System.out.println("Adding sugar and milk");
-}
+    @Override
+    protected void addCondiments() {
+        System.out.println("Adding sugar and milk");
+    }
 }
 
 // Client
 public class TemplateMethodExample {
     public static void main(String[] args) {
-    System.out.println("Making tea:");
-    Beverage tea = new Tea();
-    tea.prepareRecipe();
+        System.out.println("Making tea:");
+        Beverage tea = new Tea();
+        tea.prepareRecipe();
 
-    System.out.println("\nMaking coffee:");
-    Beverage coffee = new Coffee();
-    coffee.prepareRecipe();
+        System.out.println("\nMaking coffee:");
+        Beverage coffee = new Coffee();
+        coffee.prepareRecipe();
     }
 }
-
-
-

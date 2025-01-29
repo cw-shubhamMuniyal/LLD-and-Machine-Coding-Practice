@@ -14,19 +14,19 @@ Instead of adding methods to the objects themselves, you define a separate visit
 ```java
 // Visitor Interface
 interface Visitor {
-double visit(Liquor liquor);
-double visit(Tobacco tobacco);
-double visit(Necessity necessity);
+    double visit(Liquor liquor);
+    double visit(Tobacco tobacco);
+    double visit(Necessity necessity);
 }
 
 // Element Interface
 interface Visitable {
-double accept(Visitor visitor);
+    double accept(Visitor visitor);
 }
 
 // Concrete Element: Liquor
 class Liquor implements Visitable {
-private double price;
+    private double price;
 
     public Liquor(double price) {
         this.price = price;
@@ -62,7 +62,7 @@ private double price;
 
 // Concrete Element: Necessity
 class Necessity implements Visitable {
-private double price;
+    private double price;
 
     public Necessity(double price) {
         this.price = price;
@@ -80,10 +80,10 @@ private double price;
 
 // Concrete Visitor: Tax Calculator
 class TaxVisitor implements Visitor {
-@Override
-public double visit(Liquor liquor) {
-return liquor.getPrice() * 1.10; // 10% tax
-}
+    @Override
+    public double visit(Liquor liquor) {
+        return liquor.getPrice() * 1.10; // 10% tax
+    }
 
     @Override
     public double visit(Tobacco tobacco) {
@@ -98,8 +98,8 @@ return liquor.getPrice() * 1.10; // 10% tax
 
 // VisitorPatternExample Class to Test Visitor Pattern
 public class VisitorPatternDemo {
-public static void main(String[] args) {
-Visitor taxVisitor = new TaxVisitor();
+        public static void main(String[] args) {
+        Visitor taxVisitor = new TaxVisitor();
 
         Visitable liquor = new Liquor(100.0);
         Visitable tobacco = new Tobacco(50.0);

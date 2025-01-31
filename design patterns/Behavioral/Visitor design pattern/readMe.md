@@ -11,6 +11,16 @@ Instead of adding methods to the objects themselves, you define a separate visit
 
 ## Example from head first design pattern book:
 
+**Scenario: Tax Calculation for Different Items** </br>
+
+We have different products:
+
+- Liquor (e.g., Alcohol) – 10% tax
+- Tobacco (e.g., Cigarettes) – 30% tax
+- Necessity Items (e.g., Milk, Bread) – No tax </br>
+
+Instead of putting tax calculation logic inside each item, we use a Tax Visitor to apply different tax rates.
+
 ```java
 // Visitor Interface
 interface Visitor {

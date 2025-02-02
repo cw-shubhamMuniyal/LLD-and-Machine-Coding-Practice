@@ -4,7 +4,7 @@ implement an Pool for Database Connections, where we reuse connections instead o
 
 ## Definition of Object pool design pattern:
 
-It's used to reuse objects instead of creating and destroying them frequently. 
+It's a creational design pattern used to reuse objects instead of creating and destroying them frequently. 
 This is useful when object creation is expensive in terms of time or resources.
 
 ## When to use Object pool design pattern:

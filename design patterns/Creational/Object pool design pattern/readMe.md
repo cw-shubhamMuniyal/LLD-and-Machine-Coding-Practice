@@ -1,6 +1,6 @@
 ## Requirements:
 
-implement an Pool for Database Connections, where we reuse connections instead of creating new ones every time.
+Implement an Pool for Database Connections, where we reuse connections instead of creating new ones every time.
 
 ## Definition of Object pool design pattern:
 

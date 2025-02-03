@@ -1,6 +1,7 @@
 ## Requirements:
 
-implement an Pool for Database Connections, where we reuse connections instead of creating new ones every time.
+- Suppose we have a simple language that supports basic arithmetic operations, such as addition (+), subtraction (-), multiplication (*), and division (/). 
+- We want to create a calculator program that can interpret and evaluate arithmetic expressions written in this language.
 
 ## Definition of Interpreter design pattern:
 

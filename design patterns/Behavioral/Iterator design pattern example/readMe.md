@@ -1,6 +1,6 @@
 ## Requirements:
 
-Implement a custom iterator for a Country containing States.
+Implement a custom sequential iterator for a Country containing States.
 
 ## Definition of Iterator design pattern:
 

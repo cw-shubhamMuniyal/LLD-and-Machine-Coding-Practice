@@ -19,6 +19,7 @@ public class Game {
         board = new Board(50);
         players = new LinkedList<>();
         bufferedReader = new BufferedReader(new InputStreamReader((System.in)));
+//        2 dices are rolled at once.
         dice = new Dice(2);
     }
 
@@ -96,7 +97,7 @@ public class Game {
             if (currentPlayer.getCurrentPosition() + diceValue <= size) {
 
                 int currentPosition = getJumpUpdatedPosition(currentPlayer.getCurrentPosition() + diceValue);
-                System.out.println("Current position of " + currentPlayer.getId() + " is " + currentPosition);
+                System.out.println("Now, "+ currentPlayer.getId() + " your piece moved to " + currentPosition);
                 System.out.println();
 
                 if (currentPosition == size) {
@@ -105,12 +106,11 @@ public class Game {
                     players.removeLast();
                 } else if (currentPosition < size) {
                     currentPlayer.setCurrentPosition(currentPosition);
-                } else {
-                    continue;
                 }
+
             }
             else {
-                System.out.println(currentPlayer.getId() + " player will not move as dice value greater than required to win!");
+                System.out.println(currentPlayer.getId() + ", your piece won't move as dice value greater than required to win!");
             }
         }
 
@@ -125,7 +125,7 @@ public class Game {
 
             Jump jump = cells[currentPosition].getJump();
             if (jump != null && jump.getStartPosition() == currentPosition) {
-                System.out.println("Payer will go " + jump.getType());
+                System.out.println("Player will go " + jump.getType());
                 return jump.getEndPosition();
             }
         }

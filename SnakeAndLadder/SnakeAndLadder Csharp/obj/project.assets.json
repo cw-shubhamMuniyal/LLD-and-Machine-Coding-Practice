@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Work\\LLd\\LLD-and-Machine-Coding-Practice\\SnakeAndLadder\\SnakeAndLadder.csproj",
+      "projectUniqueName": "C:\\Work\\LLd\\LLD-and-Machine-Coding-Practice\\SnakeAndLadder\\SnakeAndLadder Csharp\\SnakeAndLadder.csproj",
       "projectName": "SnakeAndLadder",
-      "projectPath": "C:\\Work\\LLd\\LLD-and-Machine-Coding-Practice\\SnakeAndLadder\\SnakeAndLadder.csproj",
+      "projectPath": "C:\\Work\\LLd\\LLD-and-Machine-Coding-Practice\\SnakeAndLadder\\SnakeAndLadder Csharp\\SnakeAndLadder.csproj",
       "packagesPath": "C:\\Users\\Shubham\\.nuget\\packages\\",
-      "outputPath": "C:\\Work\\LLd\\LLD-and-Machine-Coding-Practice\\SnakeAndLadder\\obj\\",
+      "outputPath": "C:\\Work\\LLd\\LLD-and-Machine-Coding-Practice\\SnakeAndLadder\\SnakeAndLadder Csharp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Shubham\\AppData\\Roaming\\NuGet\\NuGet.Config"

@@ -11,7 +11,6 @@ public class TokenBucket implements RateLimiter {
     TokenBucket(int bucketCapacity, int refreshRate) {
         this.bucketCapacity = bucketCapacity;
         this.capacity = new AtomicInteger(bucketCapacity);
-        this.capacity.set(bucketCapacity);
         this.refreshRate = refreshRate;
         this.lastRefillTimeInMillis = new AtomicLong(System.currentTimeMillis());
     }

@@ -1,3 +1,10 @@
+import java.util.Map;
+import java.util.Queue;
+import java.util.concurrent.ArrayBlockingQueue;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.atomic.AtomicInteger;
+import java.util.concurrent.atomic.AtomicLong;
+
 public class Main {
     public static void main(String[] args) {
         System.out.println("Learning object pool design pattern with example!");
@@ -21,6 +28,9 @@ public class Main {
         dbConnectionPoolManager.releaseConnection(dbConnection3);
         dbConnectionPoolManager.releaseConnection(dbConnection4);
         dbConnectionPoolManager.releaseConnection(dbConnection5);
+
+        AtomicInteger
+
 
     }
 }

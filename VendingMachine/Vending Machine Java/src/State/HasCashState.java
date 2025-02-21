@@ -18,23 +18,27 @@ public class HasCashState implements State {
     @Override
     public void pressInsertCashButton() {
 
+        System.out.println("You cannot click insert coin button in has cash state!");
     }
 
     @Override
     public void setPrice(List<Coin> coins) {
 
+        System.out.println("You cannot enter price in Price input state!");
     }
 
     @Override
     public void pressSelectProductButton() {
 
-        System.out.println("Select product button pressed!");
+        System.out.println("select product button pressed!");
+        System.out.println();
         this.vendingMachine.updateState(new ProductInputState(vendingMachine));
     }
 
     @Override
     public void setCode(Integer code) {
 
+        System.out.println("You cannot enter code in has cash state!");
     }
 
     @Override

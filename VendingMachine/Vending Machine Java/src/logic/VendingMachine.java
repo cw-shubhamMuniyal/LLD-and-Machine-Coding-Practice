@@ -64,8 +64,11 @@ public class VendingMachine {
         state.dispenseProduct();
     }
 
-    public void cancelPayment(){
+    public void cancelPayment() {
 
+        System.out.println("Please collect your refund of " + this.priceEntered
+                + " from change tray!");
+        System.out.println();
     }
 
     public void returnChange() {
@@ -80,7 +83,7 @@ public class VendingMachine {
     public void addCoins(Coin coin) {
 
         Integer coinCount = coinTypeCount.getOrDefault(coin.getCoinType(), 0);
-        coinTypeCount.put(coin.getCoinType(), coinCount+1);
+        coinTypeCount.put(coin.getCoinType(), coinCount + 1);
     }
 
     public void setPriceEntered(Integer priceEntered) {
@@ -90,5 +93,10 @@ public class VendingMachine {
     public void setCodeEntered(Integer codeEntered) {
 
         this.codeEntered = codeEntered;
+    }
+
+    public void displayInventory() {
+
+        this.inventory.displayInventory();
     }
 }

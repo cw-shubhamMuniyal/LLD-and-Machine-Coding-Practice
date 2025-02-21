@@ -19,16 +19,19 @@ public class ProductInputState implements State {
     @Override
     public void pressInsertCashButton() {
 
+        System.out.println("You cannot click insert coin button in product input state!");
     }
 
     @Override
     public void setPrice(List<Coin> coins) {
 
+        System.out.println("You cannot enter price in product input state!");
     }
 
     @Override
     public void pressSelectProductButton() {
 
+        System.out.println("You cannot click insert product button in product input state!");
     }
 
     @Override
@@ -41,6 +44,7 @@ public class ProductInputState implements State {
         if (Objects.nonNull(product)) {
 
             System.out.println("You have selected " + vendingMachine.getInventory().getItems().get(code).getName());
+            System.out.println();
             this.vendingMachine.setCodeEntered(code);
             this.vendingMachine.updateState(new ProductSelectedState(vendingMachine));
         }

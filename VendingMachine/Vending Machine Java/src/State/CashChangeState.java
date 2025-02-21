@@ -19,21 +19,25 @@ public class CashChangeState implements State {
     @Override
     public void pressInsertCashButton() {
 
+        System.out.println("You cannot click insert coin button in cash change state!");
     }
 
     @Override
     public void setPrice(List<Coin> coins) {
 
+        System.out.println("You cannot enter price in cash change state!");
     }
 
     @Override
     public void pressSelectProductButton() {
 
+        System.out.println("You cannot click insert product button in cash change state!");
     }
 
     @Override
     public void setCode(Integer code) {
 
+        System.out.println("You cannot enter code in cash change state!");
     }
 
     @Override
@@ -53,14 +57,15 @@ public class CashChangeState implements State {
 
         Product product = items.get(vendingMachine.getcodeEntered());
 
-        Integer cashChange = vendingMachine.getPriceEntered() - product.getPrice();
+        int cashChange = vendingMachine.getPriceEntered() - product.getPrice();
 
         if (cashChange > 0) {
 
             coinDeduction(cashChange);
             System.out.println("Please collect change of " + cashChange + " from cash change coins tray!");
-            this.vendingMachine.updateState(new ItemDispenseState(vendingMachine));
+            System.out.println();
         }
+        this.vendingMachine.updateState(new ItemDispenseState(vendingMachine));
 
     }
 

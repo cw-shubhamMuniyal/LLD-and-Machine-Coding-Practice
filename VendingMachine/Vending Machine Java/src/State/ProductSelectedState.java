@@ -18,21 +18,25 @@ public class ProductSelectedState implements State {
     @Override
     public void pressInsertCashButton() {
 
+        System.out.println("You cannot click insert coin button in product selected state!");
     }
 
     @Override
     public void setPrice(List<Coin> coins) {
 
+        System.out.println("You cannot enter price in product selected state!");
     }
 
     @Override
     public void pressSelectProductButton() {
 
+        System.out.println("You cannot click insert product button in product selected state!");
     }
 
     @Override
     public void setCode(Integer code) {
 
+        System.out.println("You cannot enter code in product selected state!");
     }
 
     @Override

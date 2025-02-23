@@ -1,19 +1,27 @@
-package org.example.cache;
+package org.example;
 
-import lombok.AllArgsConstructor;
 import lombok.NonNull;
+import org.example.cache.LevelCache;
 import org.example.model.ReadResponse;
+import org.example.model.StatsResponse;
 import org.example.model.WriteResponse;
 
+import java.util.ArrayList;
 import java.util.List;
 
-@AllArgsConstructor
 public class CacheService<Key, Value> {
 
     private final LevelCache<Key, Value> levelCache;
     private final Integer operationsCount;
     private final List<Double> readOperationTimes;
     private final List<Double> writeOperationTimes;
+
+    public CacheService(LevelCache<Key, Value> levelCache, Integer operationsCount) {
+        this.levelCache = levelCache;
+        this.operationsCount = operationsCount;
+        readOperationTimes = new ArrayList<>();
+        writeOperationTimes = new ArrayList<>();
+    }
 
 
     public ReadResponse<Value> get(@NonNull Key key) {
@@ -28,16 +36,24 @@ public class CacheService<Key, Value> {
         return writeResponse;
     }
 
-    public List<Double> getUsages() {
+    public StatsResponse fetchStats() {
+        return StatsResponse.builder()
+                .averageWriteTime(getAverageWriteTimeTime())
+                .averageReadTime(getAverageReadTime())
+                .usages(getUsages())
+                .build();
+    }
+
+    private List<Double> getUsages() {
         return levelCache.getUsages();
     }
 
-    public Double getAverageReadTime() {
-        return getSum(readOperationTimes) / operationsCount;
+    private Double getAverageReadTime() {
+        return getSum(readOperationTimes) / Math.min(operationsCount, readOperationTimes.size());
     }
 
-    public Double getAverageWriteTimeTime() {
-        return getSum(writeOperationTimes) / operationsCount;
+    private Double getAverageWriteTimeTime() {
+        return getSum(writeOperationTimes) / Math.min(operationsCount, writeOperationTimes.size());
     }
 
     private void addTimes(List<Double> times, Double timeTaken) {

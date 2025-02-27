@@ -8,15 +8,15 @@ import java.util.List;
 
 public abstract class AtmState {
 
-    void setCard(Card card) {}
+    public void setCard(Card card) {}
 
-    void setPin(Integer pin) throws Exception {}
+    public void setPin(Integer pin) throws Exception {}
 
-    void setTransactionType(TransactionType transactionType) throws Exception {}
+    public void setTransactionType(TransactionType transactionType) throws Exception {}
 
-    void withdrawAmount(Double amount) throws Exception {}
+    public void withdrawAmount(Double amount) throws Exception {}
 
-    void depositCash(List<NoteDenomination> notes) {}
+    public void depositCash(List<NoteDenomination> notes) {}
 
-    void checkBalance() {}
+    public void checkBalance() {}
 }

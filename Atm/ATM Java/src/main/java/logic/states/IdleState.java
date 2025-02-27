@@ -11,7 +11,7 @@ public class IdleState extends AtmState {
 
     private final AtmService atmService;
 
-    void setCard(Card card) {
+    public void setCard(Card card) {
 
         if (Objects.isNull(card)) {
             throw new RuntimeException("Incorrect card entered!" +

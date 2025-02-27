@@ -10,7 +10,7 @@ public class ThousandWithdrawProcessor extends WithdrawProcessor {
         super(next);
     }
 
-    void withdraw(Map<NoteDenomination, Integer> noteDenomiationCountMap, Double amount) {
+    public void withdraw(Map<NoteDenomination, Integer> noteDenomiationCountMap, Double amount) throws Exception {
 
         int requiredNotes = (int) (amount / 1000);
         Double pendingAmount = amount % 1000;
@@ -26,7 +26,7 @@ public class ThousandWithdrawProcessor extends WithdrawProcessor {
         }
 
         if (pendingAmount > 0.0) {
-            this.withdraw(pendingAmount);
+            super.withdraw(noteDenomiationCountMap, pendingAmount);
         }
     }
 }

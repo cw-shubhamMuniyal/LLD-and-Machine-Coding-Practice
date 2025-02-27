@@ -1,8 +1,11 @@
 package models;
 
+import lombok.AllArgsConstructor;
+
 import java.time.LocalDate;
+import java.util.Objects;
 
-
+@AllArgsConstructor
 public class Card {
 
     private String id;
@@ -22,5 +25,9 @@ public class Card {
 
     public void deductBalance(Double amount) {
         this.account.deductAmount(amount);
+    }
+
+    public boolean validatePin(Integer pin) {
+        return this.pin == pin;
     }
 }

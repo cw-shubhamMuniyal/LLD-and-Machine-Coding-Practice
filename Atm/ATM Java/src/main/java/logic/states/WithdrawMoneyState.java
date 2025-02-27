@@ -10,13 +10,13 @@ public class WithdrawMoneyState extends AtmState {
         this.atmService = atmService;
     }
 
-    void withdrawAmount(Double amount) throws Exception {
+    public void withdrawAmount(Double amount) throws Exception {
 
-        if (amount < atmService.getAtm().getCurrentAmount()) {
+        if (amount > atmService.getAtm().getCurrentAmount()) {
             throw new Exception("Insufficient amount in ATM");
         }
 
-        if (amount < atmService.getAtm().getCard().getBalance()) {
+        if (amount > atmService.getAtm().getCard().getBalance()) {
             throw new Exception("Insufficient amount in Account");
         }
 
@@ -32,11 +32,11 @@ public class WithdrawMoneyState extends AtmState {
                         )
                 );
 
-        withdrawProcessor.withdraw(amount);
+        withdrawProcessor.withdraw(atmService.getAtm().getNoteDenomiationCountMap(), amount);
 
         System.out.println("Amount of Rs " + amount + "is successfully withdrawn from your account!");
-        System.out.println("please collect your card!");
-        this.atmService.updateState(new IdleState(atmService));
+
+        this.atmService.updateState(new SelectTransactionState(atmService));
     }
 
 

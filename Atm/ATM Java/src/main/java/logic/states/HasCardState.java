@@ -10,15 +10,15 @@ public class HasCardState extends AtmState{
         this.atmService = atmService;
     }
 
-    void setPin(Integer pin) throws Exception {
+    public void setPin(Integer pin) throws Exception {
 
         validatePin(pin);
 
         atmService.updateState(new SelectTransactionState(atmService));
     }
 
-    private static void validatePin(Integer pin) throws Exception {
-        if (pin < 0 || pin > 4999) {
+    private void validatePin(Integer pin) throws Exception {
+        if (this.atmService.validatePin(pin)) {
             throw new Exception("Invalid pin Entered!");
         }
     }

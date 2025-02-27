@@ -5,6 +5,7 @@ import lombok.Data;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Objects;
 
 @Data
 public class Atm {
@@ -13,17 +14,29 @@ public class Atm {
     private Double currentAmount;
     private Card card;
 
+    public Atm(Double currentAmount) {
+        this.currentAmount = currentAmount;
+    }
+
     public void addNotes(List<NoteDenomination> noteDenominationList) {
 
         Double amount = 0.0;
         for (NoteDenomination noteDenomination : noteDenominationList) {
 
-            noteDenomiationCountMap.compute(noteDenomination, (k, count) -> count + 1);
+            Integer numberOfNotes = noteDenomiationCountMap.get(noteDenomination);
+            if (Objects.nonNull(numberOfNotes)) {
+                noteDenomiationCountMap.put(noteDenomination, numberOfNotes+1);
+            }
+            else {
+                noteDenomiationCountMap.put(noteDenomination, 1);
+            }
             amount += noteDenomination.getValue();
         }
 
         this.currentAmount += amount;
-        this.card.addBalance(amount);
+        if (Objects.nonNull(card)) {
+            this.card.addBalance(amount);
+        }
     }
 
     public void deductAmount(Double amount) {
@@ -32,5 +45,9 @@ public class Atm {
 
     public void deductAccountAmount(Double amount) {
         this.card.deductBalance(amount);
+    }
+
+    public boolean validatePin(Integer pin) {
+        return this.card.validatePin(pin);
     }
 }

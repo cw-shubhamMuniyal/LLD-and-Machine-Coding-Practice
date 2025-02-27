@@ -11,7 +11,7 @@ public class SelectTransactionState extends AtmState {
         this.atmService = atmService;
     }
 
-    void setTransactionType(TransactionType transactionType) throws Exception {
+    public void setTransactionType(TransactionType transactionType) throws Exception {
 
         switch (transactionType) {
 

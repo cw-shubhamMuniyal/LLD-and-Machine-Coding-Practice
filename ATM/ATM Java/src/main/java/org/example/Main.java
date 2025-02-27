@@ -57,7 +57,7 @@ public class Main {
 
         atmService.setTransactionType(TransactionType.WITHDRAW);
 
-        atmService.withdrawAmount(1901.0);
+        atmService.withdrawAmount(1900.0);
 
         System.out.println("please select your transaction type! You can withdraw, deposit or check balance");
 

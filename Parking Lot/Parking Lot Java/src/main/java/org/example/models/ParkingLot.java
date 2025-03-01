@@ -4,6 +4,9 @@ import lombok.Getter;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Objects;
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
 
 
 public class ParkingLot {
@@ -12,9 +15,29 @@ public class ParkingLot {
     private final Map<Integer, Slot> slots;
     private final Integer capacity;
 
-    public ParkingLot(Integer capacity) {
+    private static ParkingLot parkingLotInstance;
+
+    private static Lock lock = new ReentrantLock();
+
+    private ParkingLot(Integer capacity) {
         slots = new HashMap<>();
         this.capacity = capacity;
+    }
+
+    public static ParkingLot getInstance(Integer capacity) {
+
+        if (Objects.isNull(parkingLotInstance)) {
+            lock.lock();
+            try {
+                if (Objects.isNull(parkingLotInstance)) {
+                    parkingLotInstance = new ParkingLot(capacity);
+                }
+            }
+            finally {
+                lock.unlock();
+            }
+        }
+        return parkingLotInstance;
     }
 
     Slot getSlot(Integer slotId) throws Exception {

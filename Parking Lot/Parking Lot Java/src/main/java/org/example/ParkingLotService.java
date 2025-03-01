@@ -22,7 +22,7 @@ public class ParkingLotService {
         if (Objects.nonNull(parkingLot)) {
             throw new ParkingLotExistsException("Parking lot already exists!");
         }
-        this.parkingLot = new ParkingLot(capacity);
+        this.parkingLot = ParkingLot.getInstance(capacity);
         this.parkingStrategy = parkingStrategy;
         for (int index = 0; index < capacity; index++) {
             parkingStrategy.addSlot(index);

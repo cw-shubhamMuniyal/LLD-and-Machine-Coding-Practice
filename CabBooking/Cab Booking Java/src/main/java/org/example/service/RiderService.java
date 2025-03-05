@@ -36,7 +36,8 @@ public class RiderService {
 
         Driver matchedDriver = this.driverMatchingStrategy.fetchDriver(source);
         if (Objects.nonNull(matchedDriver)) {
-            rideService.createRide(riderId, matchedDriver.getId(), source,destination);
+            rideService.createRide(riderId, matchedDriver, source,destination);
+            System.out.println("Cab booked with id:" + matchedDriver.getId() + " for rider id:" + riderId);
         }
         else {
             System.out.println("No Drivers found! please try after some time.");

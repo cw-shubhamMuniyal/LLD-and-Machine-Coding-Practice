@@ -19,7 +19,7 @@ public class RiderController {
 
     public String register(String phoneNumber) {
 
-        riderService.register(phoneNumber);
+        return riderService.register(phoneNumber);
     }
 
     public void bookCab(String riderId, Location source, Location destination) {

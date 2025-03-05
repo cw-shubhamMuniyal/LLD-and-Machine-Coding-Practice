@@ -1,6 +1,7 @@
 package org.example.service;
 
 import org.example.model.Driver;
+import org.example.model.DriverStatus;
 import org.example.model.Location;
 import org.example.model.Ride;
 import org.example.service.strategies.PricingStrategy;
@@ -17,21 +18,22 @@ public class RideService {
         this.pricingStrategy = pricingStrategy;
     }
 
-    public void createRide(String riderId, String driverId, Location source, Location destination) {
+    public void createRide(String riderId, Driver driver, Location source, Location destination) {
 
         Double rideFare = this.pricingStrategy.computePrice(source, destination);
-        List<Ride> rideList = rides.get(riderId);
+        List<Ride> rideList = rides.getOrDefault(riderId, null);
 
-        if (!rideList.isEmpty()) {
-            rideList.add(new Ride(riderId, driverId, source, destination, rideFare));
+        if (Objects.nonNull(rideList) && !rideList.isEmpty()) {
+            rideList.add(new Ride(riderId, driver.getId(), source, destination, rideFare));
         } else {
             rides.put(
                     riderId,
                     Collections.singletonList(
-                            new Ride(riderId, driverId, source, destination, rideFare)
+                            new Ride(riderId, driver.getId(), source, destination, rideFare)
                     )
             );
         }
+        driver.updateStatus(DriverStatus.ACTIVE);
     }
 
     public void endRide(Driver driver) throws Exception {
@@ -40,11 +42,12 @@ public class RideService {
             throw new RuntimeException("No driver found!");
         }
 
-        String rideId = driver.getCurrentRideId();
-        if (rideId.isBlank()) {
+        DriverStatus driverStatus = driver.getDriverStatus();
+        if (!DriverStatus.ACTIVE.equals(driverStatus)) {
             throw new RuntimeException("No active riders found fpr driver id:" + driver.getId());
         }
 
+        System.out.println("Ride ended for driver id: " + driver.getId());
         driver.endTrip();
     }
 

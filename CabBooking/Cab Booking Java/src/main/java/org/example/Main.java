@@ -2,6 +2,7 @@ package org.example;
 
 import org.example.controllers.DriverController;
 import org.example.controllers.RiderController;
+import org.example.model.DriverStatus;
 import org.example.model.Location;
 import org.example.service.DriverService;
 import org.example.service.RideService;
@@ -24,6 +25,9 @@ public class Main {
         String driverId1 = driverController.register("1234567890", new Location(10.0, 10.0));
         String driverId2 = driverController.register("0987654321", new Location(100.0, 100.0));
 
+        driverService.updateAvailability(driverId1, DriverStatus.IDLE);
+        driverService.updateAvailability(driverId2, DriverStatus.IDLE);
+
         DriverMatchingStrategy driverMatchingStrategy = new FirstDriverMatchingStrategy(driverService);
         RiderService riderService = new RiderService(rideService, driverMatchingStrategy);
         RiderController riderController = new RiderController(riderService, rideService);
@@ -31,11 +35,18 @@ public class Main {
         String riderId1 = riderController.register("6789054321");
         String riderId2 = riderController.register("5432167890");
 
-        riderController.bookCab("",
+        riderController.bookCab(riderId1,
                 new Location(20.0, 30.0),
                 new Location(200.0, 300.0));
 
         driverController.endRide(driverService.fetchDriver(driverId1));
+
+        riderController.bookCab(riderId2,
+                new Location(90.0, 90.0),
+                new Location(200.0, 300.0));
+
+        driverController.endRide(driverService.fetchDriver(driverId2));
+
 
     }
 }

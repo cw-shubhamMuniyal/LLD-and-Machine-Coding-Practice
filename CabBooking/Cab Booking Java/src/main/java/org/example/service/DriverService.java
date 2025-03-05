@@ -15,6 +15,7 @@ public class DriverService {
         String userId = UUID.randomUUID().toString().replace("-", "");
         Driver driver = new Driver(userId, phoneNumber, DriverStatus.UNAVAILABLE, location);
         drivers.put(userId, driver);
+        return userId;
     }
 
     public void updateAvailability(String id, DriverStatus status) {
@@ -67,7 +68,9 @@ public class DriverService {
 
         for (Map.Entry<String, Driver> entry : this.drivers.entrySet()) {
 
-            if (entry.getValue().getLocation().computeDistance(source) <= radius) {
+            Double distance = entry.getValue().getLocation().computeDistance(source);
+            if (distance <= radius
+            && DriverStatus.IDLE.equals(entry.getValue().getDriverStatus())) {
                 nearByDrivers.put(entry.getKey(), entry.getValue());
             }
         }

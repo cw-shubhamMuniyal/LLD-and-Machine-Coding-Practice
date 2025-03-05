@@ -12,8 +12,8 @@ public class Location {
 
     public Double computeDistance(Location location) {
         return Math.sqrt(
-                Math.pow(location.xCoordinate, 2) - Math.pow(this.xCoordinate, 2) +
-                        Math.pow(location.yCoordinate, 2) - Math.pow(this.yCoordinate, 2)
+                Math.pow(location.xCoordinate - this.xCoordinate, 2) +
+                        Math.pow(location.yCoordinate - this.yCoordinate, 2)
         );
     }
 }

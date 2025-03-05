@@ -5,7 +5,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 @Getter
-@Builder
+//@Builder
 public class Driver extends User {
 
     public Driver(String id, String phoneNumber, DriverStatus status, Location location) {
@@ -18,8 +18,6 @@ public class Driver extends User {
 
     private Location location;
 
-    private String currentRideId;
-
     public void updateStatus(DriverStatus status) {
         this.driverStatus = status;
     }
@@ -29,7 +27,7 @@ public class Driver extends User {
     }
 
     public void endTrip() {
-        this.currentRideId = null;
         this.driverStatus = DriverStatus.IDLE;
     }
+
 }

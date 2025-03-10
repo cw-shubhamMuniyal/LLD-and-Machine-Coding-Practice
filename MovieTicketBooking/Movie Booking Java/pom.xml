@@ -22,6 +22,11 @@
             <version>1.18.30</version>  <!-- Ensure version consistency -->
             <scope>provided</scope>
         </dependency>
+        <dependency>
+            <groupId>com.google.collections</groupId>
+            <artifactId>google-collections</artifactId>
+            <version>1.0</version>
+        </dependency>
     </dependencies>
 
     <build>

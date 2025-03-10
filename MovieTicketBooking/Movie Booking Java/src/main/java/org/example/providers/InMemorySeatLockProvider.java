@@ -1,5 +1,6 @@
 package org.example.providers;
 
+import com.google.common.collect.ImmutableList;
 import lombok.NonNull;
 import org.example.exceptions.SeatNotAvailableException;
 import org.example.model.Seat;
@@ -24,7 +25,7 @@ public class InMemorySeatLockProvider implements SeatLockProvider {
 
         for (Seat seat : seats) {
             if (isSeatLocked(show, seat)) {
-                throw new SeatNotAvailableException();
+                throw new SeatNotAvailableException("seat not available at this moment!");
             }
         }
 
@@ -53,7 +54,7 @@ public class InMemorySeatLockProvider implements SeatLockProvider {
     public List<Seat> getLockedSeats(Show show) {
 
         if (!seatLocks.containsKey(show)) {
-            return List.of();
+            return ImmutableList.of();
         }
 
         final List<Seat> lockedSeats = new ArrayList<>();
@@ -72,13 +73,12 @@ public class InMemorySeatLockProvider implements SeatLockProvider {
 
     private void lockSeat(final Seat seat, final Show show, final String userId) {
 
-        Map<Seat, SeatLock> seatLockMap = this.seatLocks.get(show);
 
         if (!this.seatLocks.containsKey(show)) {
             this.seatLocks.put(show, new HashMap<>());
         }
         SeatLock seatLock = new SeatLock(seat, show, LocalDateTime.now(), lockTimeOut, userId);
-        seatLockMap.put(seat, seatLock);
+        this.seatLocks.get(show).put(seat, seatLock);
     }
 
     private void removeSeat(final Seat seat, final Show show, final String userId) {
@@ -86,15 +86,16 @@ public class InMemorySeatLockProvider implements SeatLockProvider {
         if (!seatLocks.containsKey(show)) {
             return;
         }
-        this.seatLocks.get(show).remove(seat);
+        this.seatLocks.get(show).put(seat, null);
     }
 
     private boolean isSeatLocked(final Show show, final Seat seat) {
 
         if (seatLocks.containsKey(show)) {
+
             Map<Seat, SeatLock> seatLockMap = seatLocks.get(show);
             if (Objects.nonNull(seatLockMap.get(seat))) {
-                return seatLockMap.get(seat).isLockExpired();
+                return !seatLockMap.get(seat).isLockExpired();
             }
         }
 

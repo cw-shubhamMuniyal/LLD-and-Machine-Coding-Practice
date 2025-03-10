@@ -1,12 +1,14 @@
 package org.example.model;
 
 import lombok.AllArgsConstructor;
+import lombok.Getter;
 import lombok.NonNull;
 
 import java.util.ArrayList;
 import java.util.List;
 
 @AllArgsConstructor
+@Getter
 public class Theater {
 
     private final String id;

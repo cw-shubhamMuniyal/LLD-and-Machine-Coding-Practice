@@ -4,9 +4,7 @@ import lombok.NonNull;
 import org.example.exceptions.NotFoundException;
 import org.example.model.*;
 
-import java.time.LocalDateTime;
 import java.util.HashMap;
-import java.util.Locale;
 import java.util.Map;
 import java.util.UUID;
 
@@ -33,7 +31,7 @@ public class TheaterService {
         return this.theaters.get(theaterId);
     }
 
-    public Seat addSeatsInScreen(@NonNull final Integer rowNumber, @NonNull final Integer columnNumber,
+    public Seat addSeatInScreen(@NonNull final Integer rowNumber, @NonNull final Integer columnNumber,
                                  @NonNull final Screen screen) {
 
         String id = UUID.randomUUID().toString();
@@ -63,8 +61,8 @@ public class TheaterService {
 
     public Screen getScreen(@NonNull final String screenId) {
 
-        if (!seats.containsKey(screenId)) {
-            throw  new NotFoundException();
+        if (!screens.containsKey(screenId)) {
+            throw new NotFoundException();
         }
 
         return this.screens.get(screenId);

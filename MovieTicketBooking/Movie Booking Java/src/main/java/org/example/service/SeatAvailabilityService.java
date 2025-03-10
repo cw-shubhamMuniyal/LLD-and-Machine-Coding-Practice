@@ -6,6 +6,7 @@ import org.example.model.Seat;
 import org.example.model.Show;
 import org.example.providers.SeatLockProvider;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @AllArgsConstructor
@@ -16,7 +17,7 @@ public class SeatAvailabilityService {
 
     public List<Seat> getAvailableSeats(@NonNull final Show show) {
 
-        List<Seat> allSeats = show.getScreen().getSeats();
+        List<Seat> allSeats = new ArrayList<>(show.getScreen().getSeats());
         List<Seat> unAvailableSeats = getUnAvailableSeats(show);
 
         allSeats.removeAll(unAvailableSeats);
@@ -25,7 +26,7 @@ public class SeatAvailabilityService {
 
     public List<Seat> getUnAvailableSeats(@NonNull final Show show) {
 
-        List<Seat> seats = this.bookingService.getBookedSeats(show);
+        final List<Seat> seats = this.bookingService.getBookedSeats(show);
         seats.addAll(this.seatLockProvider.getLockedSeats(show));
         return seats;
     }

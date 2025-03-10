@@ -10,6 +10,7 @@ import org.example.model.Show;
 import org.example.providers.SeatLockProvider;
 
 import java.util.*;
+import java.util.stream.Collectors;
 
 public class BookingService {
 
@@ -66,7 +67,7 @@ public class BookingService {
                 .filter(Booking::isConfirmed)
                 .map(Booking::getSeats)
                 .flatMap(Collection::stream)
-                .toList();
+                .collect(Collectors.toList());
     }
 
     public void confirmBooking(@NonNull final  Booking booking, @NonNull final String userId) {

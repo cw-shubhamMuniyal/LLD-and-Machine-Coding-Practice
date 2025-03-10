@@ -5,13 +5,17 @@ import lombok.NonNull;
 import org.example.exceptions.NotFoundException;
 import org.example.model.Movie;
 
+import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
 
-@AllArgsConstructor
 public class MovieService {
 
     private final Map<String, Movie> movies;
+
+    public MovieService() {
+        movies = new HashMap<>();
+    }
 
     public Movie addMovie(@NonNull final String name) {
 

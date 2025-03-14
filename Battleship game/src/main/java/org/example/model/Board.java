@@ -19,6 +19,14 @@ public class Board {
     private final IBoundary boundary;
     private final List<Coordinate> bombLocations;
 
+    public Board(List<BoardItem> ships,
+                 IBoundary boundary) {
+
+        this.ships = ships;
+        this.boundary = boundary;
+        this.bombLocations = new ArrayList<>();
+    }
+
     public void takeHit(@NonNull final Coordinate coordinate) {
 
         if (!this.boundary.withinCoordinate(coordinate)) {

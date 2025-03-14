@@ -21,7 +21,7 @@ public class BoardItem {
                 return true;
             }
         }
-        return true;
+        return false;
     }
 
     public boolean withinCoordinate(@NonNull final Coordinate coordinate) {

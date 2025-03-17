@@ -38,7 +38,7 @@ public class Slot {
     }
 
     public boolean isSlotAvailable() {
-        return Objects.nonNull(lockerItem);
+        return Objects.isNull(lockerItem);
     }
 
     public void removeItem() {

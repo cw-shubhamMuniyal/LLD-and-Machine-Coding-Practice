@@ -19,7 +19,7 @@ public class ReturnController {
     private final NotificationService notificationService;
     private final DeliveryService deliveryService;
 
-    Slot returnItem(@NonNull final LockerItem lockerItem) {
+    public Slot returnItem(@NonNull final LockerItem lockerItem) {
 
         Slot slot = lockerService.addItemInSlot(lockerItem);
         String otpCode = otpService.saveSlotOtpMapping(slot);

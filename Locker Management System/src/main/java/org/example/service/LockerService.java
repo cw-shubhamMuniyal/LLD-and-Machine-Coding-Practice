@@ -2,6 +2,7 @@ package org.example.service;
 
 import lombok.AllArgsConstructor;
 import lombok.NonNull;
+import org.example.exceptions.SlotAlreadyOccupiedException;
 import org.example.model.Locker;
 import org.example.model.LockerItem;
 import org.example.model.Size;
@@ -11,7 +12,9 @@ import org.example.strategies.SlotAssignmentStrategy;
 import org.example.strategies.SlotFilteringStrategy;
 
 import java.time.LocalDateTime;
+import java.util.Collections;
 import java.util.List;
+import java.util.Objects;
 import java.util.UUID;
 
 @AllArgsConstructor
@@ -44,6 +47,11 @@ public class LockerService {
     public Slot addItemInSlot(@NonNull final LockerItem lockerItem) {
         List<Slot> availableSlots = getAvailableSlots();
         List<Slot> slots = slotFilteringStrategy.fetchSlotsByFilter(availableSlots, lockerItem);
+
+        if (Objects.isNull(slots) || slots.isEmpty()) {
+            throw new SlotAlreadyOccupiedException();
+        }
+
         Slot slot = slotAssignmentStrategy.pickSlot(slots);
         slot.addItem(lockerItem, LocalDateTime.now());
         return slot;

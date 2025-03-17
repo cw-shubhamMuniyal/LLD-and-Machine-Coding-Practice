@@ -1,8 +1,10 @@
 package org.example.model;
 
 import lombok.AllArgsConstructor;
+import lombok.ToString;
 
 @AllArgsConstructor
+@ToString
 public class Package implements LockerItem {
 
     private final String id;
@@ -10,6 +12,6 @@ public class Package implements LockerItem {
 
     @Override
     public Size getSize() {
-        return null;
+        return size;
     }
 }

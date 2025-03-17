@@ -34,4 +34,9 @@ public class Locker {
         return availableSlots;
     }
 
+    @Override
+    public String toString() {
+        return "id:" + id;
+    }
+
 }

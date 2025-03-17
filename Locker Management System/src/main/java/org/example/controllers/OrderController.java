@@ -2,6 +2,7 @@ package org.example.controllers;
 
 import lombok.AllArgsConstructor;
 import lombok.NonNull;
+import org.example.exceptions.SlotAlreadyOccupiedException;
 import org.example.model.Customer;
 import org.example.model.LockerItem;
 import org.example.model.Slot;

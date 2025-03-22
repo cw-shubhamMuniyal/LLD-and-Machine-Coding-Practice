@@ -95,6 +95,7 @@ public class Main {
 //            System.out.println(id);
 //        }
 
+        System.out.println("_______________________________________________");
         System.out.println("CASE 3");
         System.out.println("Available seats for a show:");
         System.out.println();

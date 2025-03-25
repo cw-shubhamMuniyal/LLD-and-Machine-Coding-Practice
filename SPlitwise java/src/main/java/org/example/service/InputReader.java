@@ -9,22 +9,31 @@ import org.example.model.CommandType;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
 @AllArgsConstructor
 public class InputReader {
 
-    BufferedReader bufferedReader = new BufferedReader(
-            new InputStreamReader(System.in)
-    );
-
+    private final BufferedReader bufferedReader;
     private final CommandExecutorFactory commandExecutorFactory;
+
+    public InputReader(@NonNull CommandExecutorFactory commandExecutorFactory) {
+        this.commandExecutorFactory = commandExecutorFactory;
+        bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+    }
 
     public void read() throws IOException {
 
-        String input = bufferedReader.readLine().trim();
-        processInput(input);
+        while (true) {
+            String input = bufferedReader.readLine().trim();
+
+            if (input.equals("EXIT")) {
+                return;
+            }
+            processInput(input);
+        }
     }
 
     private void processInput(@NonNull final String input) {
@@ -32,7 +41,7 @@ public class InputReader {
         String decimeter = " ";
         String[] tokens = input.split(decimeter);
         String commandType = tokens[0];
-        List<String> tokensList = Arrays.stream(tokens).toList();
+        List<String> tokensList = new ArrayList<>(Arrays.asList(tokens));
         tokensList.removeFirst();
         Command command = new Command(
                 CommandType.fromName(commandType), tokensList

@@ -16,7 +16,9 @@ public class UserService {
     }
 
     public User addUser(@NonNull final String name) {
-        return new User(UUID.randomUUID().toString(), name);
+        User user = new User(name, name);
+        users.put(user.getId(), user);
+        return user;
     }
 
     public User getUser(@NonNull final String userId) {

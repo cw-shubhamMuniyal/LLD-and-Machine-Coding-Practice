@@ -12,8 +12,8 @@ public class ShowExpenseCommandExecutor implements CommandExecutor {
     @Override
     public void execute(List<String> params) {
 
-        if (params.size() == 2) {
-            expenseService.showBalanceForUser(params.get(1));
+        if (params.size() == 1) {
+            expenseService.showBalanceForUser(params.getFirst());
         }
         else {
             expenseService.showBalanceForAllUsers();

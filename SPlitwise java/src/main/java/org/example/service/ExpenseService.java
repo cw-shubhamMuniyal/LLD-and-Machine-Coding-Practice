@@ -38,6 +38,10 @@ public class ExpenseService {
 
             String payerUserId = split.getUser().getId();
 
+            if (paidByUserId.equals(payerUserId)) {
+                continue;
+            }
+
 //            Balance sheet updation for payee
 
             if (!balanceSheets.containsKey(paidByUserId)) {
@@ -62,13 +66,16 @@ public class ExpenseService {
         Map<String, Double> balanceSheet = balanceSheets.get(userId);
         if (Objects.isNull(balanceSheet)) {
             System.out.println("No Active balances for given user with id " + userId);
+            return;
         }
 
         for (Map.Entry<String, Double> entry : balanceSheet.entrySet()) {
             if (entry.getValue() < 0.0) {
-                System.out.println(userId + " needs to pay " + entry.getKey() + " amount " + entry.getValue());
+                System.out.println(userId + " needs to pay " + entry.getKey()
+                        + " amount " + Math.abs(entry.getValue()));
             } else {
-                System.out.println(entry.getKey() + " needs to pay " + userId + " amount " + entry.getValue());
+                System.out.println(entry.getKey() + " needs to pay " + userId +
+                        " amount " + Math.abs(entry.getValue()));
             }
         }
 

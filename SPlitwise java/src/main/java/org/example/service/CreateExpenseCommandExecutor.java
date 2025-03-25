@@ -36,7 +36,7 @@ public class CreateExpenseCommandExecutor implements CommandExecutor {
         String splitType = params.get(index++);
         SplitType splitTypeEnum = SplitType.fromName(splitType);
 
-        if (Objects.nonNull(params.get(index))) {
+        if (params.size() > index && Objects.nonNull(params.get(index))) {
             for (int i = 0; i < numOfUsers; i++) {
                 amountToPay.add(Double.valueOf(params.get(index++)));
             }

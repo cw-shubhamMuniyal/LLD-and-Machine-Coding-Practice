@@ -1,6 +1,7 @@
 ## Requirements:
 
-Design Splitwise. Reference link of this problem: https://workat.tech/machine-coding/editorial/how-to-design-splitwise-machine-coding-ayvnfo1tfst6
+- Design Splitwise.
+- Reference link of this problem: https://workat.tech/machine-coding/editorial/how-to-design-splitwise-machine-coding-ayvnfo1tfst6
 
 ## Input to run my code:
 
